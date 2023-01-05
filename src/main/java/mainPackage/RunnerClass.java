@@ -28,12 +28,15 @@ public void run()
 	   ChromeOptions options = new ChromeOptions();
 	   ChromeDriver driver = new ChromeDriver(options);
 	 // options.setExperimentalOption("prefs", chromePrefs);
-	options.addArguments("--no-sandbox");
-	options.addArguments("--headless"); //!!!should be enabled for Jenkins
-	options.addArguments("--disable-dev-shm-usage"); //!!!should be enabled for Jenkins
-	//options.addArguments(--window-size=1920x1080); //!!!should be enabled for Jenkins
 	
-	
+	options.add_argument("--headless")
+options.add_argument("window-size=1400,1500")
+options.add_argument("--disable-gpu")
+options.add_argument("--no-sandbox")
+options.add_argument("start-maximized")
+options.add_argument("enable-automation")
+options.add_argument("--disable-infobars")
+options.add_argument("--disable-dev-shm-usage")
 
 	
 	   
