@@ -24,6 +24,8 @@ public void run()
 {
 	   WebDriverManager.chromedriver().setup();
 	   ChromeDriver driver = new ChromeDriver();
+	   ChromeOptions options = new ChromeOptions();
+	   options.addArguments("headless");
 	   driver.get("https://app.propertyware.com/pw/login.jsp");
 	   driver.findElement(By.name("email")).sendKeys("mds0418@gmail.com");
 	   driver.findElement(By.name("password")).sendKeys("HomeRiver1#");
