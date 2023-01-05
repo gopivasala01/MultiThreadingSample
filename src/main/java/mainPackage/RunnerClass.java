@@ -38,7 +38,6 @@ options.add_argument("enable-automation");
 options.add_argument("--disable-infobars");
 options.add_argument("--disable-dev-shm-usage");
 
-	
 	   
 	   driver.get("https://app.propertyware.com/pw/login.jsp");
 	   driver.findElement(By.name("email")).sendKeys("mds0418@gmail.com");
