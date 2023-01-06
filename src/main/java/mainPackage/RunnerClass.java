@@ -28,8 +28,8 @@ public void run()
 	   ChromeOptions options = new ChromeOptions();
 	   
 	 // options.setExperimentalOption("prefs", chromePrefs);
-	//options.addArguments("--no-sandbox");
-	//options.addArguments("--headless");
+	options.addArguments("--no-sandbox");
+	options.addArguments("--headless");
 	//options.addArguments("window-size=1400,1500");
 	//options.addArguments("--disable-gpu");
 	
