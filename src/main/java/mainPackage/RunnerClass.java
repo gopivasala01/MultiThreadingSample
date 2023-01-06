@@ -16,7 +16,7 @@ public class RunnerClass implements Runnable
 		   RunnerClass r = new RunnerClass();
 		   Thread t = new Thread(r);
             t.start();
-	   Thread.sleep(5000)
+	   Thread.sleep(5000);
 	   }
 	   
    }
